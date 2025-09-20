@@ -6,7 +6,7 @@ langchain-google-genai>=1.0.0
 # FastAPI and web server dependencies
 fastapi>=0.100.0
 uvicorn>=0.20.0
-
+scikit-learn>=1.0.0
 # For environment management
 python-dotenv>=1.0.0
 
