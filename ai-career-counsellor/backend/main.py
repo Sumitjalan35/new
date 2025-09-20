@@ -14,7 +14,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import google.generativeai as genai
 
 # Configuration
-GEMINI_API_KEY = "AIzaSyAaQQ26dILHuZiVI9mEd2uAzLi4TM4asXY"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAaQQ26dILHuZiVI9mEd2uAzLi4TM4asXY")
 
 # Configure Gemini API for job details generation
 if GEMINI_API_KEY and GEMINI_API_KEY != "your_gemini_api_key_here":
@@ -192,7 +192,7 @@ class CareerAdvisoryService:
             CareerAdvisoryResponse: Response with advice or error
         """
         try:
-            # Generate prompt from request
+            
             prompt = self._generate_professional_prompt(request)
 
             # Execute LLM with the generated prompt
