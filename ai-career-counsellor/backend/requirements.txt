@@ -8,6 +8,7 @@ fastapi>=0.100.0
 uvicorn>=0.20.0
 scikit-learn>=1.0.0
 pandas>=1.3.0
+google-generativeai>=0.3.0
 # For environment management
 python-dotenv>=1.0.0
 
